@@ -1,5 +1,21 @@
 .find-hotel {
   padding: 38px 18px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .find-hotel__wrapper {
+    width: 458px;
+    margin: 0 auto;
+  }
 }
 
 .find-hotel__title {

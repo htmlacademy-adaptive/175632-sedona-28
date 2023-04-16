@@ -10,14 +10,31 @@
   &--gift {
     padding-bottom: 46px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% / 3);
+    padding: 156px 33px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 170px 50px 70px;
+  }
 }
 
 .advantage__title {
   text-align: left;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .advantage__description {
   text-align: left;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }

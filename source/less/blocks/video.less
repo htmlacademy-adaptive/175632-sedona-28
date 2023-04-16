@@ -1,5 +1,20 @@
 .video {
   padding: 17px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 60px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 200px 84px;
+  }
+}
+
+.video__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    margin: 0 auto;
+  }
 }
 
 .video__title {
@@ -14,4 +29,9 @@
 
 .video__player {
   display: block;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 500px;
+  }
 }
