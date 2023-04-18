@@ -6,7 +6,13 @@
   display: block;
 }
 
-.main-header__logo--no-js {
+.main-nav--opened + .main-header__logo {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo {
   position: absolute;
   width: 185px;
   left: 0;
