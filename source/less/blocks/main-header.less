@@ -6,9 +6,13 @@
   display: block;
 }
 
-.main-nav--opened + .main-header__logo {
-  @media (max-width: @tablet-width) {
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened + .main-header__logo {
     display: none;
+  }
+
+  .main-nav--no-js + .main-header__logo {
+    bottom: -40px;
   }
 }
 
@@ -19,8 +23,9 @@
   right: 0;
   margin: auto;
   bottom: -39px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    bottom: -35px;
+    top: 0;
   }
 }

@@ -7,12 +7,8 @@
   }
 }
 
-.main-nav--no-js {
-  @media (max-width: @tablet-width) {
-    padding-bottom: 56px;
-  }
-}
-
+//Стили для кнопки открытия меню навигации
+//(отображается только на мобильных)
 .main-nav__toggle {
   position: absolute;
   display: block;
@@ -31,27 +27,39 @@
   }
 }
 
+.main-nav--no-js {
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 56px;
+  }
+}
+
+//Для меню без js кнопка не отображается
 .main-nav--no-js .main-nav__toggle {
   display: none;
 }
 
+//Вид кнопки для закрытого меню
 .main-nav--closed .main-nav__toggle {
-  background-image: url(../img/icon-menu.svg);
+  background-image: url("../img/icon-menu.svg");
 }
 
+//Вид кнопки для открытого меню
 .main-nav--opened .main-nav__toggle {
-  background-image: url(../img/icon-cross.svg);
+  background-image: url("../img/icon-cross.svg");
 }
 
+//Меню закрыто, навигация не отображается
 .main-nav--closed .main-nav__list {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
 
+//Вид навигации при открытом меню
 .main-nav--opened .main-nav__list {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .main-nav__list {
@@ -66,36 +74,30 @@
   }
 }
 
-.main-nav__item {
-  box-shadow: 0 1px 0 @drop-shadow, inset 0 1px 0 @inner-shadow;
-  margin-bottom: 1px;
+@media (max-width: @mobile-width-only) {
+  .main-nav__item {
+    box-shadow: 0 1px 0 @drop-shadow, inset 0 1px 0 @inner-shadow;
+    margin-bottom: 1px;
 
-  &:first-child {
-    box-shadow: 0 1px 0 @drop-shadow;
-
-    @media (min-width: @tablet-width) {
-      box-shadow: none;
+    &:first-child {
+      box-shadow: 0 1px 0 @drop-shadow;
     }
-  }
 
-  &:last-child {
-    box-shadow: inset 0 1px 0 @inner-shadow;
-    position: relative;
+    &:last-child {
+      box-shadow: inset 0 1px 0 @inner-shadow;
+      position: relative;
+      margin-bottom: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 7px;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-      bottom: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 7px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+        bottom: 0;
+      }
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    box-shadow: none;
   }
 }
 
@@ -128,6 +130,10 @@
     padding-top: 18px;
     padding-bottom: 17px;
     width: 133px;
+
+    &--current {
+      color: @menu-current;
+    }
   }
 
   @media (min-width: @desktop-width) {

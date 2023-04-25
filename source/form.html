@@ -12,7 +12,7 @@
     <div class="page__container">
       <header class="main-header">
         <nav class="main-nav main-nav--no-js">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
               меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item ">
@@ -21,15 +21,15 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="gallery.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">Форма отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </nav>
-        <a class="main-header__logo main-header__logo--no-js" href="index.html">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/main-logo-phone.svg" alt="Логотип Седоны." width="185"
             height="96">
         </a>
@@ -49,31 +49,36 @@
           <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--name">
               <legend class="feedback-form__legend title">Представьтесь:</legend>
-              <label class="feedback-form__label">Имя*:
+              <label class="feedback-form__label">
+                <span class="feedback-form__field">Имя*:</span>
                 <input class="feedback-form__input" type="text" name="name" value="Пётр" placeholder="Имя" required>
               </label>
-              <label class="feedback-form__label">Фамилия*:
+              <label class="feedback-form__label">
+                <span class="feedback-form__field">Фамилия*:</span>
                 <input class="feedback-form__input" type="text" name="surname" value="Пустота" placeholder="Фамилия"
                   required>
               </label>
-              <label class="feedback-form__label">Отчество:
+              <label class="feedback-form__label">
+                <span class="feedback-form__field">Отчество:</span>
                 <input class="feedback-form__input" type="text" name="middle-name" value="Викторович"
                   placeholder="Отчество">
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
               <legend class="feedback-form__legend title">Контактная информация:</legend>
-              <label class="feedback-form__label">Контактный телефон*:
-                <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone"
+              <label class="feedback-form__label feedback-form__label--decor feedback-form__label--phone">
+                <span class="feedback-form__field">Контактный телефон*:</span>
+                <input class="feedback-form__input feedback-form__input--decor" type="tel" name="phone"
                   placeholder="Введите телефон" required>
               </label>
-              <label class="feedback-form__label">Электронная почта*:
-                <input class="feedback-form__input feedback-form__input--e-mail" type="email" name="email"
+              <label class="feedback-form__label feedback-form__label--decor feedback-form__label--email">
+                <span class="feedback-form__field">Электронная почта*:</span>
+                <input class="feedback-form__input feedback-form__input--decor" type="email" name="email"
                   placeholder="Введите e-mail" required>
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--rating">
-              <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--decor title">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -100,7 +105,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
-              <legend class="feedback-form__legend title">Посещенные достопримечательности:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--decor title">Посещенные достопримечательности:</legend>
               <ul class="feedback-form__list feedback-form__list--sights">
                 <li class="feedback-form__item feedback-form__item--sights">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -133,7 +138,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--message">
-              <legend class="feedback-form__legend title">Опишите свои эмоции:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--decor title">Опишите свои эмоции:</legend>
               <textarea class="feedback-form__textarea" name="message"
                 placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
@@ -182,7 +187,7 @@
     <div class="modal-container modal-container--close">
       <div class="modal-container__inner modal-container__inner--failure modal modal--close modal--failure">
         <section class="modal__content">
-          <h2 class="modal__title title">Что-то пошло не так!</h2>
+          <h2 class="modal__title title">Что-то пошло<br> не так!</h2>
           <p class="modal__description-failure description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
         <button class="modal__button-ok button" type="button">Ок</button>

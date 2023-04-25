@@ -5,6 +5,26 @@
   background-size: cover;
   padding-top: 90px;
   padding-bottom: 85px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/divider-promo.svg");
+    background-position: -435px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background-position: -215px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
@@ -32,4 +52,8 @@
 .main-promo__text {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
 }

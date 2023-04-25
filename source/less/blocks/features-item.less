@@ -1,10 +1,17 @@
 .features-item {
   text-align: center;
   box-sizing: border-box;
+  position: relative;
 
   &--town {
     background-color: @base-color;
     color: @light-color;
+
+    @media (max-width: @mobile-width-only) {
+      background-image: url("../img/divider-list.svg");
+      background-repeat: no-repeat;
+      background-position-y: -16px;
+    }
 
     @media (min-width: @tablet-width) {
       display: flex;
@@ -25,6 +32,22 @@
   &--base {
     padding: 24px 18px;
     background-color: @feature-light;
+
+    @media (max-width: @mobile-width-only) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 36px);
+        height: 1px;
+        background-color: @border-item-color;
+        left: 18px;
+        bottom: 0;
+      }
+
+      &:last-child::after {
+        content: none;
+      }
+    }
 
     @media (min-width: @tablet-width) {
       width: calc(100% / 3);
@@ -85,6 +108,40 @@
   margin-bottom: 11px;
 }
 
+.features-item__title br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+
 .features-item__description {
   margin-top: 17px;
+}
+
+.features-item__number {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: @font-color;
+    top: 50%;
+  }
+
+  &::before {
+    left: -15px;
+  }
+
+  &::after {
+    right: -15px;
+  }
+
+  &--light::before,
+  &--light::after {
+    background-color: @light-color;
+  }
 }

@@ -16,6 +16,10 @@
   top: 0;
 }
 
+.control:focus-within .control__mark {
+  outline: 2px solid @dark-color;
+}
+
 .control__label {
   font-weight: 700;
   font-size: 18px;
@@ -24,6 +28,28 @@
   color: @dark-color;
 }
 
+.control__input:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+}
+
 .control__input[type="radio"] + .control__mark {
   border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/round.svg");
 }
