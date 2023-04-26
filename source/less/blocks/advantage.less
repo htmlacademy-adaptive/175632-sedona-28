@@ -2,13 +2,38 @@
   padding-top: 25px;
   padding-left: 65px;
   padding-right: 18px;
+  background-repeat: no-repeat;
+  background-position: 16px 16px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 70px;
+  }
 
   &--house {
     padding-top: 23px;
+    background-image: url("../img/icon-house.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 80px 73px;
+    }
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 74px 69px;
+      background-position-y: 80px;
+    }
   }
 
   &--gift {
     padding-bottom: 46px;
+    background-image: url("../img/icon-gift.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 78px 76px;
+    }
   }
 
   @media (min-width: @tablet-width) {

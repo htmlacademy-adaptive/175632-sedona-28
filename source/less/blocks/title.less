@@ -7,7 +7,19 @@
   text-transform: uppercase;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
   &--light {
     color: @light-color;
+  }
+
+  &--large {
+    font-size: 21px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
   }
 }

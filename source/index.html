@@ -12,12 +12,12 @@
     <div class="page__container">
       <header class="main-header">
         <nav class="main-nav main-nav--no-js">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="gallery.html">Фото и видео</a>
@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-        <a class="main-header__logo main-header__logo--no-js">
+        <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/main-logo-phone.svg" alt="Логотип Седоны." width="185"
             height="96">
         </a>
@@ -49,8 +49,8 @@
           <ul class="features__list">
             <li class="features__item features-item features-item--town">
               <div class="features-item__wrapper features-item__wrapper--town">
-                <h3 class="features-item__title title title--light">Настоящий городок</h3>
-                <span class="features-item__number">№ 1</span>
+                <h3 class="features-item__title title title--light">Настоящий<br> городок</h3>
+                <span class="features-item__number features-item__number--light">№ 1</span>
                 <p class="features-item__description description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="features-item__image" src="img/features-city.jpg" width="320" height="260"
@@ -62,7 +62,7 @@
             </li>
             <li class="features__item features-item advantage advantage--food">
               <h3 class="features-item__title title advantage__title">Еда</h3>
-              <p class="features-item__description description advantage__description">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+              <p class="features-item__description description advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features__item features-item advantage advantage--gift">
               <h3 class="features-item__title title advantage__title">Сувениры</h3>
@@ -70,25 +70,25 @@
             </li>
             <li class="features__item features-item features-item--bridge">
               <div class="features-item__wrapper features-item__wrapper--bridge">
-                <h3 class="features-item__title title title--light">Там есть Мост Дьявола</h3>
-                <span class="features-item__number">№ 2</span>
+                <h3 class="features-item__title title title--light">Там есть<br> Мост Дьявола</h3>
+                <span class="features-item__number features-item__number--light">№ 2</span>
                 <p class="features-item__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <img class="features-item__image" src="img/features-bridge.jpg" width="320" height="260"
                 alt="Городской вид Седоны.">
             </li>
             <li class="features__item features-item features-item--base">
-              <h3 class="features-item__title title">Небольшая площадь</h3>
+              <h3 class="features-item__title title">Небольшая<br> площадь</h3>
               <span class="features-item__number">№ 3</span>
               <p class="features-item__description description">Все интересные места находятся очень близко</p>
             </li>
             <li class="features__item features-item features-item--base">
-              <h3 class="features-item__title title">Красивая дорога</h3>
+              <h3 class="features-item__title title">Красивая<br> дорога</h3>
               <span class="features-item__number">№ 4</span>
               <p class="features-item__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="features__item features-item features-item--base">
-              <h3 class="features-item__title title">Мало туристов</h3>
+              <h3 class="features-item__title title">Мало<br> туристов</h3>
               <span class="features-item__number">№ 5</span>
               <p class="features-item__description description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
@@ -96,7 +96,7 @@
         </section>
         <section class="find-hotel">
           <div class="find-hotel__wrapper">
-            <h2 class="find-hotel__title title">Заинтересовались?</h2>
+            <h2 class="find-hotel__title title title--large">Заинтересовались?</h2>
             <p class="find-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
               предложения
               гостиниц в Седоне</p>
@@ -105,8 +105,9 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта Аризоны</h2>
-          <img class="map__image" src="img/map-mobile.jpg" width="320" height="350"
-            alt="Карта с достопримечательностями Аризоны.">
+          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209540.72700767452!2d-111.96002018228796!3d34.85437142427561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682257978157!5m2!1sru!2sru"
+          width="320" height="350" allowfullscreen title="Карта с достопримечательностями Аризоны.">
+        </iframe>
         </section>
       </main>
       <footer class="main-footer">

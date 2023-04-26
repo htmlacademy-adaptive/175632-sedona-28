@@ -6,15 +6,26 @@
   display: block;
 }
 
-.main-header__logo--no-js {
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened + .main-header__logo {
+    display: none;
+  }
+
+  .main-nav--no-js + .main-header__logo {
+    bottom: -40px;
+  }
+}
+
+.main-header__logo {
   position: absolute;
   width: 185px;
   left: 0;
   right: 0;
   margin: auto;
   bottom: -39px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    bottom: -35px;
+    top: 0;
   }
 }
