@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -30,14 +35,14 @@
           </ul>
         </nav>
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/main-logo-phone.svg" alt="Логотип Седоны." width="185"
+          <img class="main-header__logo-image" src="img/header/main-logo.svg" alt="Логотип Седоны." width="185"
             height="96">
         </a>
       </header>
       <main class="main-container gallery">
         <section class="main-promo main-promo--inner">
           <h1 class="visually-hidden">Галлерея фото и видео</h1>
-          <img class="main-promo__text" src="img/promo-text-inner.svg" width="229" height="39"
+          <img class="main-promo__text" src="img/promo/promo-text-inner.svg" width="229" height="39"
             alt="Sedona.">
         </section>
         <section class="photo">
@@ -50,7 +55,14 @@
           <ul class="photo__list">
             <li class="photo__item photo__item--main photo-item">
               <a class="photo-item__link" href="#">
-                <img class="photo-item__img photo-item__img--main" src="img/photo-road.jpg" alt="Шоссе">
+                <picture>
+                  <source media="(min-width:  1200px)"
+                    srcset="img/photo/photo-road-desktop.jpg 1x, img/photo/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width:  768px)"
+                    srcset="img/photo/photo-road-tablet.jpg 1x, img/photo/photo-road-tablet@2x.jpg 2x">
+                  <img class="photo-item__img photo-item__img--main" src="img/photo/photo-road.jpg" srcset="img/photo/photo-road@2x.jpg 2x"
+                    width="280" height="280" alt="Шоссе.">
+                </picture>
               </a>
               <div class="photo-item__wrapper photo-item__wrapper--main">
                 <div class="photo-item__description">
@@ -65,7 +77,14 @@
             </li>
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
-                <img class="photo-item__img" src="img/photo-plant.jpg" alt="Кактус">
+                <picture>
+                  <source media="(min-width:  1200px)"
+                    srcset="img/photo/photo-plant-desktop.jpg 1x, img/photo/photo-plant-desktop@2x.jpg 2x">
+                  <source media="(min-width:  768px)"
+                    srcset="img/photo/photo-plant-tablet.jpg 1x, img/photo/photo-plant-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo/photo-plant.jpg" srcset="img/photo/photo-plant@2x.jpg 2x"
+                    width="280" height="280" alt="Кактус.">
+                </picture>
               </a>
               <div class="photo-item__wrapper">
                 <div class="photo-item__description">
@@ -80,7 +99,14 @@
             </li>
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
-                <img class="photo-item__img" src="img/photo-forest.jpg" alt="Дорога в лесу">
+                <picture>
+                  <source media="(min-width:  1200px)"
+                    srcset="img/photo/photo-forest-desktop.jpg 1x, img/photo/photo-forest-desktop@2x.jpg 2x">
+                  <source media="(min-width:  768px)"
+                    srcset="img/photo/photo-forest-tablet.jpg 1x, img/photo/photo-forest-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo/photo-forest.jpg" srcset="img/photo/photo-forest@2x.jpg 2x"
+                    width="280" height="280" alt="Дорога в лесу.">
+                </picture>
               </a>
               <div class="photo-item__wrapper photo-item__wrapper--road">
                 <div class="photo-item__description">
@@ -95,7 +121,14 @@
             </li>
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
-                <img class="photo-item__img" src="img/photo-bridge.jpg" alt="Мост дьявола">
+                <picture>
+                  <source media="(min-width:  1200px)"
+                    srcset="img/photo/photo-bridge-desktop.jpg 1x, img/photo/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:  768px)"
+                    srcset="img/photo/photo-bridge-tablet.jpg 1x, img/photo/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo/photo-bridge.jpg" srcset="img/photo/photo-bridge@2x.jpg 2x"
+                    width="280" height="280" alt="Мост дьявола.">
+                </picture>
               </a>
               <div class="photo-item__wrapper">
                 <div class="photo-item__description">
@@ -117,9 +150,17 @@
               очередной
               раз!</p>
           </div>
-          <a class="video__link" href="#">
-            <img class="video__player" src="img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация">
-          </a>
+          <div class="video__wrapper-player">
+            <a class="video__link" href="#">
+              <picture>
+                <source media="(min-width:  1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+                <source media="(min-width:  768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+                <img class="video__player" src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" width="280" height="177"
+                  alt="Видеопрезентация">
+              </picture>
+            </a>
+            <div class="video__button"><span class="visually-hidden">Включить видео</span></div>
+          </div>
         </section>
       </main>
       <footer class="main-footer">

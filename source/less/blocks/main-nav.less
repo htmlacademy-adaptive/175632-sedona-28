@@ -40,12 +40,12 @@
 
 //Вид кнопки для закрытого меню
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("../img/header/icon-menu.svg");
 }
 
 //Вид кнопки для открытого меню
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../img/icon-cross.svg");
+  background-image: url("../img/header/icon-cross.svg");
 }
 
 //Меню закрыто, навигация не отображается
@@ -101,7 +101,7 @@
   }
 }
 
-.main-nav__item:nth-child(2) {
+.main-nav__item:nth-child(4n + 2) {
   @media (min-width: @tablet-width) {
     margin-right: 153px;
   }
