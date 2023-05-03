@@ -75,8 +75,9 @@
   }
 }
 
-.footer-contacts__copyright {
-  margin: 0;
+.footer-contacts__copyright-link {
+  color: #000000;
+  text-decoration: none;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -87,9 +88,16 @@
     margin-left: auto;
     justify-content: flex-end;
   }
+
+  &:hover {
+    color: @base-color;
+  }
+
+  &:active {
+    color: @copyright-active;
+  }
 }
 
 .footer-contacts__copyright-logo {
   margin-left: 14px;
-  display: block;
 }

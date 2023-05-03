@@ -83,13 +83,22 @@
 .photo-item__like {
   padding-left: 37px;
   padding-top: 5px;
-  background-image: url("../img/photo/like-dark.svg");
-  background-repeat: no-repeat;
+  position: relative;
 
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/photo/like-light.svg");
+  &::before {
+    content: "";
+    position: absolute;
+    mask-image: url("../img/sprite.svg#like-icon");
+    width: 23px;
+    height: 21px;
+    background-color: @dark-opacity;
+
+    @media (min-width: @desktop-width) {
+      background-color: @light-color;
+    }
   }
 }
+
 
 .photo-item__like-count {
   font-weight: 700;
