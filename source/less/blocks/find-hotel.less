@@ -20,8 +20,22 @@
 
 .find-hotel__title {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .find-hotel__description {
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.find-hotel__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }

@@ -30,7 +30,7 @@
   }
 
   &--base {
-    padding: 24px 18px;
+    padding: 24px 35px 26px;
     background-color: @feature-light;
 
     @media (max-width: @mobile-width-only) {
@@ -55,7 +55,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 52px 50px;
+      padding: 54px 50px;
     }
   }
 }
@@ -86,11 +86,15 @@
 
   @media (min-width: @tablet-width) {
     width: calc(100% / 3);
-    padding: 52px 33px 31px;
+    padding: 52px 32px 31px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 52px 50px 51px;
+    padding: 52px 55px;
+
+    &--bridge {
+      padding: 52px 85px;
+    }
   }
 }
 
@@ -107,6 +111,10 @@
 
 .features-item__title {
   margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .features-item__title br {
@@ -118,7 +126,18 @@
 
 .features-item__description {
   margin-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
 }
+
+.features-item__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 
 .features-item__number {
   position: relative;
@@ -127,18 +146,18 @@
   &::after {
     content: "";
     position: absolute;
-    width: 10px;
+    width: 7px;
     height: 1px;
     background-color: @font-color;
     top: 50%;
   }
 
   &::before {
-    left: -15px;
+    left: -12px;
   }
 
   &::after {
-    right: -15px;
+    right: -12px;
   }
 
   &--light::before,

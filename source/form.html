@@ -83,7 +83,7 @@
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--rating">
-              <legend class="feedback-form__legend feedback-form__legend--decor title">Ваше общее впечатление:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--rating feedback-form__legend--decor title">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -110,7 +110,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
-              <legend class="feedback-form__legend feedback-form__legend--decor title">Посещенные достопримечательности:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--sights feedback-form__legend--decor title">Посещенные достопримечательности:</legend>
               <ul class="feedback-form__list feedback-form__list--sights">
                 <li class="feedback-form__item feedback-form__item--sights">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -175,7 +175,7 @@
               </a>
             </li>
           </ul>
-          <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
             <svg class="footer-contacts__copyright-logo" width="27" height="35">
               <use xlink:href="img/sprite.svg#copyright-logo"></use>
             </svg>
@@ -189,16 +189,16 @@
           <h2 class="modal__title title">Что-то пошло<br> не так!</h2>
           <p class="modal__description-failure description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
-        <button class="modal__button-ok button" type="button">Ок</button>
+        <button class="modal__button modal__button--ok button" type="button">Ок</button>
       </div>
       <div class="modal-container__inner modal-container__inner--success modal modal--success modal--close">
         <section class="modal__content modal__content--success">
           <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
             опубликуем его на сайте.</p>
         </section>
         <div class="modal__wrapper-button">
-          <button class="modal__button-close button" type="button">Закрыть окно</button>
+          <button class="modal__button modal__button--close button" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>
