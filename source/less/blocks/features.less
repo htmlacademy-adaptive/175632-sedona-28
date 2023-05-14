@@ -1,5 +1,5 @@
 .features__wrapper {
-  padding: 32px 18px;
+  padding: 34px 18px;
 
   @media (min-width: @tablet-width) {
     width: 520px;
@@ -16,6 +16,16 @@
 .features__title {
   color: @dark-color;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.features__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .features__list {

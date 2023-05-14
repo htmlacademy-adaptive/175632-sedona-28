@@ -12,4 +12,19 @@
   text-decoration: none;
   background-color: @base-color;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:not(:disabled):active {
+    background-color: @button-active;
+    color: @light-opacity;
+  }
+
+  &:disabled {
+    background-color: @border-color;
+    cursor: auto;
+  }
 }

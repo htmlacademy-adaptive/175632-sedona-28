@@ -16,8 +16,16 @@
   top: 0;
 }
 
+.control > .control__input:hover + .control__mark {
+  background-color: @border-color;
+}
+
 .control:focus-within .control__mark {
   outline: 2px solid @dark-color;
+}
+
+.control > .control__input:active + .control__mark {
+  background-color: @mark-active;
 }
 
 .control__label {
@@ -52,4 +60,8 @@
   width: 16px;
   height: 16px;
   background-image: url("../img/form/round.svg");
+}
+
+.control__input:active + .control__mark::before {
+  opacity: 0.3;
 }

@@ -1,5 +1,5 @@
 .footer-contacts {
-  padding: 33px 30px;
+  padding: 33px 30px 33px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -22,7 +22,7 @@
   color: @dark-color;
 
   @media (min-width: @tablet-width) {
-    width: 190px;
+    max-width: 160px;
     margin-right: auto;
     text-align: left;
   }
@@ -59,37 +59,70 @@
   width: 48px;
   height: 48px;
   background-color: @base-color;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 
-  &--vkontakte {
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-active;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &--vkontakte::before {
     background-image: url("../img/footer/vk.svg");
   }
 
-  &--telegram {
+  &--telegram::before {
     background-image: url("../img/footer/telegram.svg");
   }
 
-  &--youtube {
+  &--youtube::before {
     background-image: url("../img/footer/youtube.svg");
   }
 }
 
-.footer-contacts__copyright {
-  margin: 0;
+.footer-contacts__copyright-link {
+  color: #000000;
+  text-decoration: none;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 200px;
+    max-width: 160px;
     margin-left: auto;
     justify-content: flex-end;
+  }
+
+  &:hover {
+    color: @base-color;
+  }
+
+  &:active {
+    color: @copyright-active;
   }
 }
 
 .footer-contacts__copyright-logo {
   margin-left: 14px;
-  display: block;
 }

@@ -83,7 +83,7 @@
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--rating">
-              <legend class="feedback-form__legend feedback-form__legend--decor title">Ваше общее впечатление:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--rating feedback-form__legend--decor title">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -110,7 +110,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
-              <legend class="feedback-form__legend feedback-form__legend--decor title">Посещенные достопримечательности:</legend>
+              <legend class="feedback-form__legend feedback-form__legend--sights feedback-form__legend--decor title">Посещенные достопримечательности:</legend>
               <ul class="feedback-form__list feedback-form__list--sights">
                 <li class="feedback-form__item feedback-form__item--sights">
                   <label class="feedback-form__label feedback-form__label--control control">
@@ -175,17 +175,11 @@
               </a>
             </li>
           </ul>
-          <p class="footer-contacts__copyright">Разработано
-            <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">Логотип html academy</span>
-              <svg class="footer-contacts__copyright-logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"
-                  fill="black" />
-              </svg>
-            </a>
-          </p>
+          <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
+            <svg class="footer-contacts__copyright-logo" width="27" height="35">
+              <use xlink:href="img/sprite.svg#copyright-logo"></use>
+            </svg>
+          </a>
         </section>
       </footer>
     </div>
@@ -195,16 +189,16 @@
           <h2 class="modal__title title">Что-то пошло<br> не так!</h2>
           <p class="modal__description-failure description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
-        <button class="modal__button-ok button" type="button">Ок</button>
+        <button class="modal__button modal__button--ok button" type="button">Ок</button>
       </div>
       <div class="modal-container__inner modal-container__inner--success modal modal--success modal--close">
         <section class="modal__content modal__content--success">
           <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
             опубликуем его на сайте.</p>
         </section>
         <div class="modal__wrapper-button">
-          <button class="modal__button-close button" type="button">Закрыть окно</button>
+          <button class="modal__button modal__button--close button" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>

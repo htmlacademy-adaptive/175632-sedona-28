@@ -11,9 +11,11 @@
 }
 
 .video__wrapper {
+  width: 250px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     width: 445px;
-    margin: 0 auto;
   }
 }
 
@@ -22,14 +24,19 @@
 }
 
 .video__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .video__description {
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 90px;
   }
 }
 
@@ -47,10 +54,6 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  background-image: url("../img/video/play-button.png");
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/video/play-button@2x.png");
-  }
+  background-image: url("../img/sprite.svg#play-button");
+  cursor: pointer;
 }
