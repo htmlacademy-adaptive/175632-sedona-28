@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - обратная связь</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/sprite.svg#favicons_icon" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -35,14 +34,14 @@
           </ul>
         </nav>
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/header/main-logo.svg" alt="Логотип Седоны." width="185"
+          <img class="main-header__logo-image" src="img/sprite.svg#header_main-logo" alt="Логотип Седоны." width="185"
             height="96">
         </a>
       </header>
       <main class="main-container">
         <section class="main-promo main-promo--inner">
           <h1 class="visually-hidden">Форма обратной связи</h1>
-          <img class="main-promo__text" src="img/promo/promo-text-inner.svg" width="229" height="39"
+          <img class="main-promo__text" src="img/sprite.svg#promo_promo-text-inner" width="229" height="39"
             alt="Sedona.">
         </section>
         <section class="feedback">
@@ -84,8 +83,8 @@
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--rating">
               <legend class="feedback-form__legend feedback-form__legend--rating feedback-form__legend--decor title">Ваше общее впечатление:</legend>
-              <ul class="feedback-form__list">
-                <li class="feedback-form__item">
+              <ul class="feedback-form__list feedback-form__list--rating">
+                <li class="feedback-form__item feedback-form__item--rating">
                   <label class="feedback-form__label feedback-form__label--control control">
                     <input class="feedback-form__input control__input visually-hidden" type="radio" name="rating" value="positive"
                       checked>
@@ -93,14 +92,14 @@
                     <span class="control__label">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="feedback-form__item">
+                <li class="feedback-form__item feedback-form__item--rating">
                   <label class="feedback-form__label feedback-form__label--control control">
                     <input class="feedback-form__input control__input visually-hidden" type="radio" name="rating" value="negative">
                     <span class="control__mark"></span>
                     <span class="control__label">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="feedback-form__item">
+                <li class="feedback-form__item feedback-form__item--rating">
                   <label class="feedback-form__label feedback-form__label--control  control">
                     <input class="feedback-form__input control__input visually-hidden" type="radio" name="rating" value="neutral">
                     <span class="control__mark"></span>
@@ -177,7 +176,7 @@
           </ul>
           <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
             <svg class="footer-contacts__copyright-logo" width="27" height="35">
-              <use xlink:href="img/sprite.svg#copyright-logo"></use>
+              <use xlink:href="img/sprite.svg#footer_copyright-logo"></use>
             </svg>
           </a>
         </section>
@@ -186,7 +185,7 @@
     <div class="modal-container modal-container--close">
       <div class="modal-container__inner modal-container__inner--failure modal modal--close modal--failure">
         <section class="modal__content">
-          <h2 class="modal__title title">Что-то пошло<br> не так!</h2>
+          <h2 class="modal__title title">Что-то пошло&nbsp;<br>не так!</h2>
           <p class="modal__description-failure description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
         <button class="modal__button modal__button--ok button" type="button">Ок</button>
@@ -194,7 +193,7 @@
       <div class="modal-container__inner modal-container__inner--success modal modal--success modal--close">
         <section class="modal__content modal__content--success">
           <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
+          <p class="modal__description-success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br>В ближайшее время мы
             опубликуем его на сайте.</p>
         </section>
         <div class="modal__wrapper-button">

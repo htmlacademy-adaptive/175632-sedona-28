@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - каталог</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/sprite.svg#favicons_icon" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -35,14 +34,14 @@
           </ul>
         </nav>
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/header/main-logo.svg" alt="Логотип Седоны." width="185"
+          <img class="main-header__logo-image" src="img/sprite.svg#header_main-logo" alt="Логотип Седоны." width="185"
             height="96">
         </a>
       </header>
       <main class="main-container gallery">
         <section class="main-promo main-promo--inner">
           <h1 class="visually-hidden">Галлерея фото и видео</h1>
-          <img class="main-promo__text" src="img/promo/promo-text-inner.svg" width="229" height="39"
+          <img class="main-promo__text" src="img/sprite.svg#promo_promo-text-inner" width="229" height="39"
             alt="Sedona.">
         </section>
         <section class="photo">
@@ -56,12 +55,18 @@
             <li class="photo__item photo__item--main photo-item">
               <a class="photo-item__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width:  1200px)"
+                    srcset="img/photo/photo-road-desktop.webp 1x, img/photo/photo-road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width:  768px)"
+                    srcset="img/photo/photo-road-tablet.webp 1x, img/photo/photo-road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-road.webp 1x, img/photo/photo-road@2x.webp 2x">
+
                   <source media="(min-width:  1200px)"
                     srcset="img/photo/photo-road-desktop.jpg 1x, img/photo/photo-road-desktop@2x.jpg 2x">
                   <source media="(min-width:  768px)"
                     srcset="img/photo/photo-road-tablet.jpg 1x, img/photo/photo-road-tablet@2x.jpg 2x">
-                  <img class="photo-item__img photo-item__img--main" src="img/photo/photo-road.jpg" srcset="img/photo/photo-road@2x.jpg 2x"
-                    width="280" height="280" alt="Шоссе.">
+                  <img class="photo-item__img photo-item__img--main" src="img/photo/photo-road.jpg"
+                    srcset="img/photo/photo-road@2x.jpg 2x" width="280" height="280" alt="Шоссе.">
                 </picture>
               </a>
               <div class="photo-item__wrapper photo-item__wrapper--main">
@@ -78,12 +83,18 @@
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width:  1200px)"
+                    srcset="img/photo/photo-plant-desktop.webp 1x, img/photo/photo-plant-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width:  768px)"
+                    srcset="img/photo/photo-plant-tablet.webp 1x, img/photo/photo-plant-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-plant.webp 1x, img/photo/photo-plant@2x.webp 2x">
+
                   <source media="(min-width:  1200px)"
                     srcset="img/photo/photo-plant-desktop.jpg 1x, img/photo/photo-plant-desktop@2x.jpg 2x">
                   <source media="(min-width:  768px)"
                     srcset="img/photo/photo-plant-tablet.jpg 1x, img/photo/photo-plant-tablet@2x.jpg 2x">
-                  <img class="photo-item__img" src="img/photo/photo-plant.jpg" srcset="img/photo/photo-plant@2x.jpg 2x"
-                    width="280" height="280" alt="Кактус.">
+                  <img class="photo-item__img" src="img/photo/photo-plant.jpg" srcset="img/photo/photo-plant@2x.jpg 2x" width="280"
+                    height="280" alt="Кактус.">
                 </picture>
               </a>
               <div class="photo-item__wrapper">
@@ -100,12 +111,18 @@
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width:  1200px)"
+                    srcset="img/photo/photo-forest-desktop.webp 1x, img/photo/photo-forest-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width:  768px)"
+                    srcset="img/photo/photo-forest-tablet.webp 1x, img/photo/photo-forest-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-forest.webp 1x, img/photo/photo-forest@2x.webp 2x">
+
                   <source media="(min-width:  1200px)"
                     srcset="img/photo/photo-forest-desktop.jpg 1x, img/photo/photo-forest-desktop@2x.jpg 2x">
                   <source media="(min-width:  768px)"
                     srcset="img/photo/photo-forest-tablet.jpg 1x, img/photo/photo-forest-tablet@2x.jpg 2x">
-                  <img class="photo-item__img" src="img/photo/photo-forest.jpg" srcset="img/photo/photo-forest@2x.jpg 2x"
-                    width="280" height="280" alt="Дорога в лесу.">
+                  <img class="photo-item__img" src="img/photo/photo-forest.jpg" srcset="img/photo/photo-forest@2x.jpg 2x" width="280"
+                    height="280" alt="Дорога в лесу.">
                 </picture>
               </a>
               <div class="photo-item__wrapper photo-item__wrapper--road">
@@ -122,12 +139,18 @@
             <li class="photo__item photo-item">
               <a class="photo-item__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width:  1200px)"
+                    srcset="img/photo/photo-bridge-desktop.webp 1x, img/photo/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width:  768px)"
+                    srcset="img/photo/photo-bridge-tablet.webp 1x, img/photo/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-bridge.webp 1x, img/photo/photo-bridge@2x.webp 2x">
+
                   <source media="(min-width:  1200px)"
                     srcset="img/photo/photo-bridge-desktop.jpg 1x, img/photo/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width:  768px)"
                     srcset="img/photo/photo-bridge-tablet.jpg 1x, img/photo/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="photo-item__img" src="img/photo/photo-bridge.jpg" srcset="img/photo/photo-bridge@2x.jpg 2x"
-                    width="280" height="280" alt="Мост дьявола.">
+                  <img class="photo-item__img" src="img/photo/photo-bridge.jpg" srcset="img/photo/photo-bridge@2x.jpg 2x" width="280"
+                    height="280" alt="Мост дьявола.">
                 </picture>
               </a>
               <div class="photo-item__wrapper">
@@ -190,7 +213,7 @@
           </ul>
           <a class="footer-contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
             <svg class="footer-contacts__copyright-logo" width="27" height="35">
-              <use xlink:href="img/sprite.svg#copyright-logo"></use>
+              <use xlink:href="img/sprite.svg#footer_copyright-logo"></use>
             </svg>
           </a>
         </section>
