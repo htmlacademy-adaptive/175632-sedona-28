@@ -46,8 +46,9 @@
 }
 
 .video__button {
-  width: 48px;
-  height: 54px;
+  width: 90px;
+  height: 80px;
+  padding: 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -55,5 +56,18 @@
   bottom: 0;
   margin: auto;
   background-image: url("../img/sprite.svg#video_play-button");
+  background-position: center;
+  background-color: transparent;
+  background-size: 48px 54px;
+  background-repeat: no-repeat;
   cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

@@ -17,6 +17,8 @@
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
+      <!-- При использовании js, чтобы открыть меню, удалите класс main-nav--no-js, добавьте класс main-nav--opened.
+      Чтобы скрыть меню, удалите класс main-nav--no-js, добавьте класс main-nav--closed -->
         <nav class="main-nav main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -60,20 +62,19 @@
                 <p class="features-item__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <picture class="features-item__picture">
-                <picture>
-                  <source type="image/webp" media="(min-width:  1200px)"
-                    srcset="img/features/features-city-desktop.webp 1x, img/features/features-city-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width:  768px)"
-                    srcset="img/features/features-city-tablet.webp 1x, img/features/features-city-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/features/features-city.webp 1x, img/features/features-city@2x.webp 2x">
+                <source type="image/webp" media="(min-width:  1200px)"
+                  srcset="img/features/features-city-desktop.webp 1x, img/features/features-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:  768px)"
+                  srcset="img/features/features-city-tablet.webp 1x, img/features/features-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/features/features-city.webp 1x, img/features/features-city@2x.webp 2x">
 
-                  <source media="(min-width:  1200px)"
-                    srcset="img/features/features-city-desktop.jpg 1x, img/features/features-city-desktop@2x.jpg 2x">
-                  <source media="(min-width:  768px)"
-                    srcset="img/features/features-city-tablet.jpg 1x, img/features/features-city-tablet@2x.jpg 2x">
-                  <img class="features-item__image" src="img/features/features-city.jpg" srcset="img/features/features-city@2x.jpg 2x"
-                    width="320" height="260" alt="Городской вид Седоны.">
-                </picture>
+                <source media="(min-width:  1200px)"
+                  srcset="img/features/features-city-desktop.jpg 1x, img/features/features-city-desktop@2x.jpg 2x">
+                <source media="(min-width:  768px)"
+                  srcset="img/features/features-city-tablet.jpg 1x, img/features/features-city-tablet@2x.jpg 2x">
+                <img class="features-item__image" src="img/features/features-city.jpg" srcset="img/features/features-city@2x.jpg 2x"
+                  width="320" height="260" alt="Городской вид Седоны.">
+              </picture>
             </li>
             <li class="features__item features-item advantage advantage--house">
               <h3 class="features-item__title title advantage__title">Жильё</h3>
