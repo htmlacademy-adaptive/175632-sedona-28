@@ -17,6 +17,8 @@
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
+      <!-- При использовании js, чтобы открыть меню, удалите класс main-nav--no-js, добавьте класс main-nav--opened.
+      Чтобы скрыть меню, удалите класс main-nav--no-js, добавьте класс main-nav--closed -->
         <nav class="main-nav main-nav--no-js">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
               меню</span></button>
@@ -176,19 +178,19 @@
               раз!</p>
           </div>
           <div class="video__wrapper-player">
-            <a class="video__link" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width:  1200px)" srcset="img/video/video-desktop.webp 1x, img/video/video-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width:  768px)" srcset="img/video/video-tablet.webp 1x, img/video/video-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/video/video.webp 1x, img/video/video@2x.webp 2x">
+            <picture>
+              <source type="image/webp" media="(min-width:  1200px)"
+                srcset="img/video/video-desktop.webp 1x, img/video/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:  768px)"
+                srcset="img/video/video-tablet.webp 1x, img/video/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video/video.webp 1x, img/video/video@2x.webp 2x">
 
-                <source media="(min-width:  1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
-                <source media="(min-width:  768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
-                <img class="video__player" src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" width="280" height="177"
-                  alt="Видеопрезентация">
-              </picture>
-            </a>
-            <div class="video__button"><span class="visually-hidden">Включить видео</span></div>
+              <source media="(min-width:  1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+              <source media="(min-width:  768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+              <img class="video__player" src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" width="280" height="177"
+                alt="Видеопрезентация">
+            </picture>
+            <button class="video__button" type="button"><span class="visually-hidden">Включить видео</span></button>
           </div>
         </section>
       </main>
